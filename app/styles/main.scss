@@ -2,6 +2,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
+@import "app/styles/_helpers.scss";
 
 .browsehappy {
   margin: 0.2em 0;
@@ -22,4 +23,21 @@ body {
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   
+}
+
+.hero {
+  background: $bg-green;
+  color: $white-high;
+}
+.btn-download {
+	background: #65C178;
+	border-radius: 5px;
+	color: $white-high;
+	padding: 0 1em;
+	font-size: 0.75em;
+	width: 16em;
+	height: 5em;
+	.brand {
+		font-size: 2.5rem;
+	}
 }
