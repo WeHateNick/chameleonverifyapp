@@ -24,20 +24,60 @@ body {
 @media screen and (min-width: 768px) {
   
 }
-
+.row {
+	padding: 0 5%;
+}
+.main-title {
+	color: $bg-green;
+	font-size: 6em;
+}
 .hero {
   background: $bg-green;
   color: $white-high;
+  padding: 3em 5%;
+  margin-bottom: 2em;
+	margin-top: 5%;
+	margin-bottom: 5%;
 }
 .btn-download {
-	background: #65C178;
+	position: relative;
+	background: $accent;
 	border-radius: 5px;
 	color: $white-high;
 	padding: 0 1em;
+	margin-top: 2em;
 	font-size: 0.75em;
 	width: 16em;
 	height: 5em;
+	&:hover {
+		color: $white-high;
+	}
+	.btn-label,
+	.brand-icon,
 	.brand {
+		position: absolute;
+	}
+	.btn-label {
+		top: 0.5em;
+		left: 6em;
+	}
+	.brand-icon {
+		top: 0.10em;
+		left: 0.5em;
+		font-size: 4rem;
+	}
+	.brand {
+		top: 0.25em;
+		left: 0.25em;
 		font-size: 2.5rem;
 	}
+}
+.steps {
+	background-image: url('../images/process-image.png');
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	height: 716px;
+	margin-top: 10%;
 }

@@ -9,6 +9,7 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -22,20 +23,29 @@
 
 
     <div class="container-fluid">
-      <div class="header">
-        <h1 class="text-muted">Chameleon</h1>
+      <div class="header row">
+        <div class="col-md-12">
+          <h1 class="main-title">Chameleon</h1>
+        </div>
       </div>
 
-      <div class="hero">
-        <h2>Counterfit tickets are a thing of the past</h2>
-        <p>
-          Ever been scammed by a scalper or third-party ticket vendor? Well, say hello to Chameleon. Simply scan the barcode of the ticket before purchase and Chameleon will let you know if the ticket is valid or not.
-        </p>
-        <button href="#" class="btn btn-download">Download For<br><span class="brand">Android</span></button>
+      <div class="hero row">
+        <div class="col-md-6">
+          <h2>Counterfit tickets are a thing of the past</h2>
+          <p>
+            Ever been scammed by a scalper or third-party ticket vendor? Well, say hello to Chameleon. Simply scan the barcode of the ticket before purchase and Chameleon will let you know if the ticket is valid or not.
+          </p>
+          <button href="#" class="btn btn-download">
+            <span class="fa fa-android brand-icon"></span>
+            <span class="btn-label">Download For<span><br>
+            <span class="brand">Android</span>
+          </button>
+        </div>
       </div>
 
-      <div class="row">
-        <ol class="steps">
+      <div class="row steps">
+        <!-- <img src="../images/process-image.png"> -->
+        <ol>
           <li class="col-md-6">Scan the Ticket</li>
           <li class="col-md-6">Chameleon Checks It</li>
           <li class="col-md-6 col-md-offset-3">Rest Assured Your Ticket Is Valid</li>
@@ -80,18 +90,22 @@
             </ul>
         </div>
       </div>
-      <a href="#" class="btn-download btn-centered">Download For <span class="brand">Android</span></a>
-      <div class="social-media">
-        <h3 class="follow-us">Follow Us</h3>
-        <ul class="social-icons">
-          <li>Icon</li>
-          <li>Icon</li>
-          <li>Icon</li>
-          <li>Icon</li>
-        </ul>
+      <div class="row">
+        <a href="#" class="btn-download btn-centered">Download For <span class="brand">Android</span></a>
+      </div>
+      <div class="row">
+        <div class="social-media">
+          <h3 class="follow-us">Follow Us</h3>
+          <ul class="social-icons">
+            <li>Icon</li>
+            <li>Icon</li>
+            <li>Icon</li>
+            <li>Icon</li>
+          </ul>
+        </div>
       </div>
       <hr>
-      <div class="footer">
+      <div class="footer row">
         <p><a href="#">Copyright Chameleon LLC 2014</a> | <a href="#">Contact</a> | <a href="#">Privacy Policy</a></p>
       </div>
 
