@@ -136,6 +136,7 @@ module.exports = function (grunt) {
             '<%= config.dist %>/*',
             '!<%= config.dist %>/.git*',
             '!<%= config.dist %>/package.json',
+            '!<%= config.dist %>/bower.json',
             '!<%= config.dist %>/Procfile',
             '!<%= config.dist %>/web.js',
             '!<%= config.dist %>/node_modules'
