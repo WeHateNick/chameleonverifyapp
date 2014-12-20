@@ -14,6 +14,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 
 /* Space out content a bit */
 body {
+	background-color: #FAFAFA;
 	@include main-font;
 	font-size: 18px;
 	color: $paragraph-color;
