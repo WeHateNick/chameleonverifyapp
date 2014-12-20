@@ -3,6 +3,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 @import "app/styles/_helpers.scss";
+@import "app/styles/_typography.scss";
 
 .browsehappy {
   margin: 0.2em 0;
@@ -13,23 +14,31 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 
 /* Space out content a bit */
 body {
+	@include main-font;
 	font-size: 18px;
+	color: $paragraph-color;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-body,
 p {
 	color: $paragraph-color;
+	letter-spacing: 0.05em;
 }
 
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
+	.hero-buttons {
+		text-align: left;
+	}
   
 }
 .row {
 	padding: 0 5%;
+}
+.row .row {
+	padding: 0;
 }
 .main-title {
 	color: $title-green;
@@ -37,30 +46,38 @@ p {
 }
 .hero {
   background: $bg-green;
-  padding: 3em 5%;
+  padding: 1em 5%;
+  margin-top: 2em;
   margin-bottom: 2em;
-	margin-top: 2.5%;
-	margin-bottom: 2.5%;
 	h2 {
-		font-size: 2em;
-  	color: $white-med;
+		@include main-font(300);
+		font-size: 3em;
+		line-height: 1em;
+  	margin-bottom: 0.75em;
+		color: $white-low;  
 	}
 	p {
-		color: $white-high;
+		color: $white-md;
 	}
 }
+
 .btn-download {
+	@include main-font(300);
 	position: relative;
 	background: $accent;
 	border-radius: 5px;
 	color: $white-high;
 	padding: 0 1em;
-	margin-top: 2em;
+	margin: 2em 0;
 	font-size: 0.75em;
-	width: 16em;
-	height: 5em;
+	width: 216px;
+	height: 68px;
+	transition: 0s background-color;
 	&:hover {
 		color: $white-high;
+		background: #65A778;
+		-webkit-transition: all 200ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  	transition:         all 200ms cubic-bezier(0.165, 0.84, 0.44, 1);
 	}
 	.btn-label,
 	.brand-icon,
@@ -68,18 +85,26 @@ p {
 		position: absolute;
 	}
 	.btn-label {
-		top: 0.5em;
+		top: 6px;
 		left: 6em;
 	}
 	.brand-icon {
-		top: 0.10em;
-		left: 0.5em;
-		font-size: 4rem;
+		top: 8px;
+		left: 20px;
+		font-size: 4.5rem;
 	}
 	.brand {
-		top: 0.25em;
-		left: 0.25em;
-		font-size: 3rem;
+		top: 8px;
+		left: -12px;
+		font-size: 3.6rem;
+	}
+}
+.ios {
+	background: transparent;
+	opacity: 0.6;
+	border-color: $white-md;
+	.brand {
+		left: 0;
 	}
 }
 .steps {
