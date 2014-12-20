@@ -5,6 +5,8 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "app/styles/_helpers.scss";
 @import "app/styles/_typography.scss";
 @import "app/styles/_phone.scss";
+@import "app/styles/device-mockups/_device-mockups.scss";
+@import "app/styles/device-mockups/_device-mockups2.scss";
 
 .browsehappy {
   margin: 0.2em 0;
