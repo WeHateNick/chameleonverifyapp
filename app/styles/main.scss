@@ -120,6 +120,14 @@ p {
 		left: 0;
 	}
 }
+.screen { 
+	img {
+		width: 100%;
+		height: 100%;
+		right: -1px;
+		position: relative;
+	}
+}
 .steps {
 	background-image: url('../images/process-image.png');
 	-webkit-background-size: cover;
