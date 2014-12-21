@@ -1,6 +1,30 @@
-.section-title {
-	font-size: 3em;
-	margin-bottom: 1em;
+.features	{
+	overflow: hidden;
+	.section-title {
+		font-size: 3em;
+		margin-bottom: 1em;
+	}
+	.ticket-types {
+		@include main-font(300);
+		font-size: 1.2em;
+		list-style: none;
+		margin-left: 20%;
+		li {
+			padding-bottom: 0.6em;
+		}
+	}
+	.vertical-break {
+		width: 0px;
+		height: 250px;
+		background: none;
+		border: 1px solid rgba(64, 64, 64, 0.52);
+		right: 40px;
+		top: 20px;
+		position: absolute;
+	}
+	.features-description {
+		padding-top: 1em;
+	}
 }
 .follow-us {
 	font-size: 1.6em;
