@@ -1,5 +1,23 @@
-
 .section-title {
 	font-size: 3em;
 	margin-bottom: 1em;
+}
+.follow-us {
+	font-size: 1.6em;
+	margin-top: 2em;
+	margin-bottom: 1em;
+	color: $paragraph-soft;
+}
+.social-icons {
+	opacity: .92;
+	li {
+		display: inline-block;
+		a {
+			color: $paragraph-color;
+		}
+	}
+	span {
+		font-size: 1.6em;
+		padding: 0.5em;
+	}
 }
