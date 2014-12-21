@@ -129,11 +129,40 @@ p {
 	}
 }
 .steps {
-	background-image: url('../images/process-image.png');
-	-webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 	height: 716px;
-	margin-top: 10%;
+	margin-top: 20%;
+	@media screen and (min-width: 768px) {
+		background-image: url('../images/process-image.png');
+		-webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	  color: $white-high;
+	}
+	ol {
+	  list-style: none;
+	  text-align: center;
+	  position: relative;
+	  top: 20%;
+	}
+	li {
+		@include main-font(300);
+	  font-size: 2.6em;
+	}
+	.process-icons {
+		color: $white-low;
+		.icon-top {
+			font-size: 3em;
+			display: block;
+		}
+		.icon-top.fa-mobile {
+			font-size: 4em;
+			margin-top: -20px;
+			margin-bottom: -24px;
+		}
+		.icon-bottom {
+			margin-top: 1em;
+			font-size: 1.6em;
+		}
+	}
 }
