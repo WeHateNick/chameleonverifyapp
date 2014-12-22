@@ -17,7 +17,7 @@
 		width: 0px;
 		height: 250px;
 		background: none;
-		border: 1px solid rgba(64, 64, 64, 0.52);
+		border: 1px solid $paragraph-ultra-soft;
 		right: 40px;
 		top: 20px;
 		position: absolute;
@@ -43,5 +43,32 @@
 	span {
 		font-size: 1.6em;
 		padding: 0.5em;
+	}
+}
+.images {
+	text-align: center;
+	margin-top: 5%;
+	.full-size img {
+		width: auto;
+		max-height: 480px;
+	}
+	.preview-size {
+		list-style: none;
+		.preview-image {
+			padding: 0 1.6em 1.6em;
+			cursor: pointer;
+		}
+		.preview-image.selected:after {
+			content: '';
+			width: 50%;
+			height: 1px;
+			border: thin solid $paragraph-soft;
+			display: block;
+			margin: 0.6em auto 0;
+		}
+		img {
+			width: auto;
+			max-height: 220px;
+		}
 	}
 }
