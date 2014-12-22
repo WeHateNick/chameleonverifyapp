@@ -37,20 +37,30 @@ h3 {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
-.icon-instagram:after,
-.icon-twitter:after,
-.icon-facebook:after,
-.icon-email:after {
+.social-icons a:hover {
+	text-decoration: none;
 }
 .icon-instagram:after {
 	content: "\e603";
 }
+a:hover .icon-instagram:after {
+	color: #517fa4;
+}
 .icon-twitter:after {
 	content: "\e604";
+}
+a:hover .icon-twitter:after {
+	color: #00aced;
 }
 .icon-facebook:after {
 	content: "\e602";
 }
+a:hover .icon-facebook:after {
+	color: #3b5998;
+}
 .icon-email:after {
 	content: "\e600";
+}
+a:hover .icon-email:after {
+	color: #9E9D8D;
 }
