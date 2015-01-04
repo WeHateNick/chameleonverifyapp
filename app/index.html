@@ -117,32 +117,17 @@
           </p>
         </div>
       </div>
-      <div class="images row hidden-sm hidden-xs">
+      <div ng-app="imageSelector" ng-controller="ImageSelectorCtrl" class="images row hidden-sm hidden-xs">
         <div class="col-md-6">
           <div class="full-size">
-            <img src="images/screenshots/valid.png">
+            <img ng-src="{{selectedImage.path}}">
           </div>
         </div>
         <div class="col-md-6 centered">
             <ul class="preview-size clearfix">
-              <div class="col-md-6">
-                <li class="preview-image">
-                  <img src="images/screenshots/facebook-share.png">
-                </li>
-              </div>
-              <div class="col-md-6">
-                <li class="preview-image">
-                  <img src="images/screenshots/home-screen.png">
-                </li>
-              </div>
-              <div class="col-md-6">
-                <li class="preview-image selected">
-                  <img src="images/screenshots/valid.png">
-                </li>
-              </div>
-              <div class="col-md-6">
-                <li class="preview-image">
-                  <img src="images/screenshots/invalid.png">
+              <div class="col-md-6" ng-repeat="image in images">
+                <li class="preview-image" ng-class="{selected: image.path === selectedImage.path}">
+                  <img ng-src="{{image.path}}" ng-click="selectImage(image.path)">
                 </li>
               </div>
             </ul>
@@ -199,6 +184,7 @@
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -214,6 +200,7 @@
 
         <!-- build:js({app,.tmp}) scripts/main.js -->
         <script src="scripts/main.js"></script>
+        <script src="scripts/image-selector.controller.js"></script>
         <!-- endbuild -->
 </body>
 </html>

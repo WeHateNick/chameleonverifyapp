@@ -51,24 +51,44 @@
 	.full-size img {
 		width: auto;
 		max-height: 480px;
+		box-shadow: $card-shadow;
 	}
 	.preview-size {
 		list-style: none;
 		.preview-image {
 			padding: 0 1.6em 1.6em;
-			cursor: pointer;
+			&:hover {
+				opacity: 0.82;
+			}
+			&.selected:hover {
+				opacity: 1;
+			}
 		}
-		.preview-image.selected:after {
+		.preview-image.selected {
+			img {
+				box-shadow: none;
+			}
+		}
+		.preview-image.selected::after {
 			content: '';
 			width: 50%;
 			height: 1px;
 			border: thin solid $paragraph-soft;
+			opacity: 0.52;
 			display: block;
+			position: absolute;
+			bottom: 20px;
+			right: 0;
+			left: 0;
+			z-index: 2;
 			margin: 0.6em auto 0;
 		}
 		img {
 			width: auto;
 			max-height: 220px;
+			box-shadow: $card-shadow;
+			border-radius: 2px;
+			cursor: pointer;
 		}
 	}
 }
