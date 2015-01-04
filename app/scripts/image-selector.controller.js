@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('imageSelector', [])
-	.controller('ImageSelectorCtrl', function ($scope) {
+	.controller('ImageSelectorCtrl', ['$scope', function ($scope) {
 		$scope.selectedImage = {
 			path:  'images/screenshots/valid.png'
 		};
@@ -16,4 +16,4 @@ angular.module('imageSelector', [])
 				$scope.selectedImage.path = path;
 			}
 		};
-	});
+	}]);
