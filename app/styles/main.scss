@@ -138,3 +138,8 @@ p {
 		position: relative;
 	}
 }
+.slogan {
+	@include main-font(300);
+	color: $paragraph-soft;
+	font-size: 4rem;
+}
