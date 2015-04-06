@@ -60,9 +60,19 @@ p {
 		}
 	}
 }
+.header {
+	text-align: center;
+	@media screen and (min-width: 768px) {
+		text-align: left;
+	}
+}
 .main-title {
 	font-size: 3em;
 	color: $title-green;
+	display: inline;
+  padding-left: 0.25em;
+  top: 0.3em;
+  position: relative;
 	@media screen and (min-width: 768px) {
 		font-size: 5em;
 	}
