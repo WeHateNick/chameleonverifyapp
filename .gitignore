@@ -1,7 +1,7 @@
 node_modules
-dist/*
 !dist/Procfile
 !dist/web.js
+dist/*
 .tmp
 .sass-cache
 bower_components
