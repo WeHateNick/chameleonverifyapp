@@ -62,8 +62,22 @@ p {
 }
 .header {
 	text-align: center;
+	.home-link:hover {
+		text-decoration: none;
+	}
 	@media screen and (min-width: 768px) {
 		text-align: left;
+	}
+	.nav-tab a {
+		position: absolute;
+		right: 10%;
+		top: -20px;
+		background: $bg-green;
+		color: $white-md;
+		font-size: 1.2em;
+		padding: 0.65em 2em;
+		border-bottom-left-radius: 8px;
+		border-bottom-right-radius: 8px;
 	}
 }
 .main-title {
