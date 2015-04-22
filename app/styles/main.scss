@@ -69,6 +69,11 @@ p {
 	@media screen and (min-width: 768px) {
 		text-align: left;
 	}
+	img, h1 {
+		@media screen and (max-width: 522px) {
+			margin-top: 4em;
+		}
+	}
 	.nav-tab a {
 		position: absolute;
 		right: 10%;
