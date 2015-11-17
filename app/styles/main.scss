@@ -2,14 +2,14 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
-@import "app/styles/_helpers.scss";
-@import "app/styles/_typography.scss";
-@import "app/styles/_phone.scss";
-@import "app/styles/_section-features.scss";
-@import "app/styles/_section-process.scss";
-@import "app/styles/device-mockups/_device-mockups.scss";
-@import "app/styles/device-mockups/_device-mockups2.scss";
-@import "app/styles/_team.scss";
+@import "_helpers.scss";
+@import "_typography.scss";
+@import "_phone.scss";
+@import "_section-features.scss";
+@import "_section-process.scss";
+@import "device-mockups/_device-mockups.scss";
+@import "device-mockups/_device-mockups2.scss";
+@import "_team.scss";
 
 .browsehappy {
   margin: 0.2em 0;
